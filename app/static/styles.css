@@ -1250,3 +1250,135 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile production polish */
+@media (max-width: 720px) {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(155, 92, 255, 0.18), transparent 22rem),
+      linear-gradient(135deg, var(--night-blue), #05070d 75%);
+  }
+
+  .navbar {
+    height: 66px;
+    width: min(100% - 24px, var(--max-width));
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 13px;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    width: min(100% - 28px, var(--max-width));
+    padding: 56px 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 46px;
+    padding-bottom: 44px;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: clamp(4.1rem, 23vw, 6.4rem);
+    line-height: 0.88;
+    letter-spacing: -0.08em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.45rem;
+    line-height: 1.14;
+  }
+
+  .hero-description,
+  .section-heading p,
+  .contact-card p,
+  .final-cta-card p {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 310px;
+  }
+
+  .main-orbital-card {
+    width: 100%;
+    min-height: 300px;
+    transform: none;
+  }
+
+  .ai-panel {
+    min-height: 250px;
+    padding: 20px;
+  }
+
+  .section-heading h2,
+  .contact-card h2,
+  .final-cta-card h2 {
+    font-size: 2.15rem;
+    line-height: 1.04;
+  }
+
+  .service-card,
+  .project-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .project-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .lead-form {
+    padding: 18px;
+  }
+
+  .project-modal {
+    width: calc(100% - 20px);
+  }
+
+  .modal-body {
+    padding: 24px;
+  }
+
+  .modal-body h3 {
+    font-size: 1.65rem;
+  }
+
+  .demo-video {
+    max-height: 260px;
+  }
+
+  .site-footer {
+    width: min(100% - 28px, var(--max-width));
+  }
+}
