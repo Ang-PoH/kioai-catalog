@@ -1,4 +1,4 @@
-﻿from datetime import datetime, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 import json
 import uuid
@@ -63,20 +63,38 @@ CATALOG = {
         {
             "icon": "⚙️",
             "title": "Automatización de procesos",
-            "description": "Diseño de flujos para reducir tareas repetitivas, conectar herramientas y acelerar operaciones internas.",
+            "description": "Flujos inteligentes para reducir tareas repetitivas, conectar herramientas y acelerar operaciones internas.",
             "benefit": "Menos trabajo manual, más velocidad operativa.",
         },
         {
             "icon": "🤖",
             "title": "Bots con IA",
-            "description": "Bots conversacionales para atención, captura de información, seguimiento y soporte interno o externo.",
+            "description": "Bots conversacionales para WhatsApp, web, atención, captura de datos, seguimiento y soporte.",
             "benefit": "Atención más rápida sin saturar al equipo.",
         },
         {
-            "icon": "💬",
-            "title": "WhatsApp/CRM",
-            "description": "Integración de WhatsApp, formularios, CRMs y bases de datos para centralizar conversaciones y leads.",
-            "benefit": "Prospectos mejor organizados y seguimiento claro.",
+            "icon": "📱",
+            "title": "Social Media con IA",
+            "description": "Calendarios de contenido, ideas, copies, captions, guiones, campañas y piezas para redes sociales.",
+            "benefit": "Contenido constante, estratégico y más rápido de producir.",
+        },
+        {
+            "icon": "🎨",
+            "title": "Diseño gráfico con IA",
+            "description": "Creativos para anuncios, posts, mockups, branding, presentaciones y material comercial asistido por IA.",
+            "benefit": "Diseño visual más ágil sin perder intención comercial.",
+        },
+        {
+            "icon": "📈",
+            "title": "Estrategia de marketing",
+            "description": "Embudos, mensajes comerciales, campañas, benchmarking, análisis competitivo y propuesta de valor.",
+            "benefit": "Marketing con dirección, no solo publicaciones bonitas.",
+        },
+        {
+            "icon": "🧩",
+            "title": "Personalización de soluciones",
+            "description": "Sistemas hechos a la medida según industria, proceso, equipo, objetivo comercial y herramientas existentes.",
+            "benefit": "Soluciones adaptadas al negocio, no plantillas genéricas.",
         },
         {
             "icon": "📊",
@@ -85,28 +103,22 @@ CATALOG = {
             "benefit": "Decisiones con datos visibles y accionables.",
         },
         {
-            "icon": "🕸️",
-            "title": "Scraping y extracción de datos",
-            "description": "Extracción estructurada de información pública, validaciones y monitoreo de fuentes digitales.",
-            "benefit": "Información clave sin captura manual.",
-        },
-        {
             "icon": "📄",
             "title": "Procesamiento documental",
             "description": "OCR, clasificación, validación y extracción de datos desde PDFs, imágenes, comprobantes y documentos.",
             "benefit": "Documentos convertidos en datos útiles.",
         },
         {
-            "icon": "🧠",
-            "title": "Asistentes con base de conocimiento",
-            "description": "Asistentes de IA entrenados con documentos internos para responder con contexto controlado.",
-            "benefit": "Conocimiento empresarial disponible al instante.",
-        },
-        {
             "icon": "🔌",
             "title": "Integraciones API",
-            "description": "Conexión entre plataformas mediante APIs, webhooks, servicios backend y automatizaciones personalizadas.",
+            "description": "Conexión entre CRMs, formularios, WhatsApp, bases de datos, webhooks y servicios backend.",
             "benefit": "Herramientas conectadas en un mismo sistema.",
+        },
+        {
+            "icon": "🕸️",
+            "title": "Scraping y extracción de datos",
+            "description": "Extracción estructurada de información pública, validaciones y monitoreo de fuentes digitales.",
+            "benefit": "Información clave sin captura manual.",
         },
     ],
     "projects": [
