@@ -345,3 +345,8 @@ def code_examples():
         "count": len(get_code_examples()),
         "items": get_code_examples(),
     }
+
+
+@app.get("/catalog", response_class=HTMLResponse)
+def catalog_page(request: Request):
+    return templates.TemplateResponse(request=request, name="catalog.html", context={})

@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KIOAI: Automatización e Inteligencia Artificial para empresas que quieren crecer más rápido." />
+  <title>KIOAI | Automatización e Inteligencia Artificial</title>
+
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/static/styles.css?v=3.0" />
+  <script src="/static/script.js?v=3.0" defer></script>
+</head>
+
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a href="#top" class="brand" aria-label="Ir al inicio">
+        <span class="brand-mark">K</span>
+        <span class="brand-text">KIOAI</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#tech">Tecnologías</a>
+        <a href="#process">Proceso</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          Soluciones reales de automatización e IA
+        </div>
+
+        <h1>KIOAI</h1>
+
+        <p class="hero-subtitle">
+          Automatización e Inteligencia Artificial para empresas que quieren crecer más rápido.
+        </p>
+
+        <p class="hero-description">
+          Diseñamos sistemas inteligentes que reducen trabajo manual, conectan herramientas,
+          procesan información y convierten operaciones repetitivas en flujos claros, medibles y escalables.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Agendar llamada</a>
+          <a class="btn btn-secondary" href="#projects">Ver proyectos</a>
+        </div>      </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbital-card main-orbital-card">
+          <div class="card-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="ai-panel">
+            <div class="ai-panel-top">
+              <span class="ai-badge">KIOAI Engine</span>
+              <span class="ai-live">Live</span>
+            </div>
+
+            <div class="flow-lines">
+              <div class="flow-line active"></div>
+              <div class="flow-line"></div>
+              <div class="flow-line short"></div>
+            </div>
+
+            <div class="mini-grid">
+              <div>OpenAI</div>
+              <div>FastAPI</div>
+              <div>n8n</div>
+              <div>Docker</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-one">Bots con IA</div>
+        <div class="floating-chip chip-two">APIs</div>
+        <div class="floating-chip chip-three">Dashboards</div>
+      </div>
+    </section>
+
+    <section class="section section-narrow reveal">
+      <div class="section-heading">
+        <span class="section-kicker">Qué hacemos</span>
+        <h2>Servicios diseñados para convertir procesos lentos en sistemas inteligentes.</h2>
+        <p>
+          KIOAI combina automatización, IA, integración de datos y diseño operativo para construir herramientas útiles,
+          no demos bonitos sin impacto.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="cards-grid service-grid" id="servicesGrid"></div>
+    </section>
+
+    <section class="section split-section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Casos reales</span>
+        <h2>Proyectos que demuestran capacidad técnica y criterio comercial.</h2>
+        <p>
+          Estos casos muestran experiencia en APIs, procesamiento documental, scraping, automatización masiva,
+          asistentes con conocimiento y productos internos de IA.
+        </p>
+      </div>
+
+      <div class="project-filters reveal" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="ai">IA</button>
+        <button class="filter-btn" data-filter="automation">Automatización</button>
+        <button class="filter-btn" data-filter="api">APIs</button>
+        <button class="filter-btn" data-filter="data">Datos</button>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="cards-grid project-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section tech-section" id="tech">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Stack</span>
+        <h2>Tecnologías con las que construimos soluciones robustas.</h2>
+        <p>
+          Usamos herramientas modernas, conectables y mantenibles para que cada solución pueda pasar de MVP a operación real.
+        </p>
+      </div>
+
+      <div class="tech-grid reveal" id="techGrid"></div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Cómo trabajamos</span>
+        <h2>Proceso claro, profesional y orientado a resultados.</h2>
+      </div>
+
+      <div class="timeline reveal" id="processTimeline"></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Evidencia visual</span>
+        <h2>Workflows, automatizaciones y ejemplos técnicos.</h2>
+        <p>
+          Una vista visual de algunos flujos, lógica operativa y ejemplos de implementación usados en proyectos reales.
+        </p>
+      </div>
+
+      <div class="gallery-grid reveal" id="galleryGrid"></div>
+    </section>
+
+    <section class="section code-section" id="code-examples">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Ejemplos técnicos</span>
+        <h2>Código simple para demostrar lógica real de automatización.</h2>
+        <p>
+          Pequeños ejemplos en Python que muestran cómo KIOAI estructura validaciones, APIs y lógica operativa.
+        </p>
+      </div>
+
+      <div class="code-grid reveal" id="codeGrid"></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">Contacto</span>
+          <h2>Construyamos una automatización útil para tu empresa.</h2>
+          <p>
+            Cuéntanos qué proceso quieres mejorar. Podemos ayudarte a detectar oportunidades, priorizar automatizaciones
+            y diseñar un MVP funcional.
+          </p>
+
+          <div class="contact-buttons">
+            <a class="contact-pill contact-pill-whatsapp" href="https://api.whatsapp.com/send?phone=525610610149&text=Hola%20KIOAI%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20e%20IA." target="_blank" rel="noopener">
+              <span class="contact-icon">↗</span>
+              <span>
+                <small>WhatsApp</small>
+                <strong>Hablar con Joel</strong>
+              </span>
+            </a>
+
+            <a class="contact-pill contact-pill-whatsapp" href="https://api.whatsapp.com/send?phone=527296307185&text=Hola%20KIOAI%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20e%20IA." target="_blank" rel="noopener">
+              <span class="contact-icon">↗</span>
+              <span>
+                <small>WhatsApp</small>
+                <strong>Hablar con Ángel</strong>
+              </span>
+            </a>
+
+            <a class="contact-pill contact-pill-email" href="mailto:joel.aldahir@kioai.lat?subject=Solicitud%20de%20automatizaci%C3%B3n%20KIOAI&body=Hola%20KIOAI%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20e%20IA." target="_blank" rel="noopener">
+              <span class="contact-icon">✉</span>
+              <span>
+                <small>Correo</small>
+                <strong>Enviar mensaje a Joel</strong>
+              </span>
+            </a>
+
+            <a class="contact-pill contact-pill-email" href="mailto:angel.poh@kioai.lat?subject=Solicitud%20de%20automatizaci%C3%B3n%20KIOAI&body=Hola%20KIOAI%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20e%20IA." target="_blank" rel="noopener">
+              <span class="contact-icon">✉</span>
+              <span>
+                <small>Correo</small>
+                <strong>Enviar mensaje a Ángel</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <label>
+            Nombre
+            <input type="text" name="name" placeholder="Tu nombre" required />
+          </label>
+
+          <label>
+            Empresa
+            <input type="text" name="company" placeholder="Nombre de tu empresa" />
+          </label>
+
+          <label>
+            Correo
+            <input type="email" name="email" placeholder="correo@empresa.com" required />
+          </label>
+
+          <label>
+            ¿Qué quieres automatizar?
+            <textarea name="message" rows="4" placeholder="Cuéntanos brevemente tu proceso o problema..." required></textarea>
+          </label>
+
+          <button class="btn btn-primary full-width" type="submit">
+            Enviar solicitud
+          </button>
+
+          <p class="form-note">
+            Este formulario guarda el lead localmente en el backend FastAPI para pruebas del MVP.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section final-cta reveal">
+      <div class="final-cta-card">
+        <span class="section-kicker">Siguiente paso</span>
+        <h2>¿Listo para automatizar tu empresa?</h2>
+        <p>
+          Empecemos con una llamada breve para detectar procesos repetitivos, oportunidades de IA y posibles ahorros operativos.
+        </p>
+        <a class="btn btn-primary" href="#contact">Agenda una llamada</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="currentYear"></span> KIOAI. Automatización e Inteligencia Artificial aplicada a empresas.</p>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
