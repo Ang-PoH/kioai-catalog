@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+﻿from datetime import datetime, timezone
 from pathlib import Path
 import json
 import uuid
@@ -17,7 +17,7 @@ GALLERY_DIR = BASE_DIR / "static" / "gallery"
 
 app = FastAPI(
     title="KIOAI Catalog MVP",
-    description="Catálogo web interactivo para KIOAI con FastAPI, HTML, CSS y JavaScript Vanilla.",
+    description="CatÃ¡logo web interactivo para KIOAI con FastAPI, HTML, CSS y JavaScript Vanilla.",
     version="1.0.0",
 )
 
@@ -61,74 +61,74 @@ def write_leads(leads: list[dict]) -> None:
 CATALOG = {
     "services": [
         {
-            "icon": "⚙️",
-            "title": "Automatización de procesos",
+            "icon": "âš™ï¸",
+            "title": "AutomatizaciÃ³n de procesos",
             "description": "Flujos inteligentes para reducir tareas repetitivas, conectar herramientas y acelerar operaciones internas.",
-            "benefit": "Menos trabajo manual, más velocidad operativa.",
+            "benefit": "Menos trabajo manual, mÃ¡s velocidad operativa.",
         },
         {
-            "icon": "🤖",
+            "icon": "ðŸ¤–",
             "title": "Bots con IA",
-            "description": "Bots conversacionales para WhatsApp, web, atención, captura de datos, seguimiento y soporte.",
-            "benefit": "Atención más rápida sin saturar al equipo.",
+            "description": "Bots conversacionales para WhatsApp, web, atenciÃ³n, captura de datos, seguimiento y soporte.",
+            "benefit": "AtenciÃ³n mÃ¡s rÃ¡pida sin saturar al equipo.",
         },
         {
-            "icon": "📱",
+            "icon": "ðŸ“±",
             "title": "Social Media con IA",
-            "description": "Calendarios de contenido, ideas, copies, captions, guiones, campañas y piezas para redes sociales.",
-            "benefit": "Contenido constante, estratégico y más rápido de producir.",
+            "description": "Calendarios de contenido, ideas, copies, captions, guiones, campaÃ±as y piezas para redes sociales.",
+            "benefit": "Contenido constante, estratÃ©gico y mÃ¡s rÃ¡pido de producir.",
         },
         {
-            "icon": "🎨",
-            "title": "Diseño gráfico con IA",
+            "icon": "ðŸŽ¨",
+            "title": "DiseÃ±o grÃ¡fico con IA",
             "description": "Creativos para anuncios, posts, mockups, branding, presentaciones y material comercial asistido por IA.",
-            "benefit": "Diseño visual más ágil sin perder intención comercial.",
+            "benefit": "DiseÃ±o visual mÃ¡s Ã¡gil sin perder intenciÃ³n comercial.",
         },
         {
-            "icon": "📈",
+            "icon": "ðŸ“ˆ",
             "title": "Estrategia de marketing",
-            "description": "Embudos, mensajes comerciales, campañas, benchmarking, análisis competitivo y propuesta de valor.",
-            "benefit": "Marketing con dirección, no solo publicaciones bonitas.",
+            "description": "Embudos, mensajes comerciales, campaÃ±as, benchmarking, anÃ¡lisis competitivo y propuesta de valor.",
+            "benefit": "Marketing con direcciÃ³n, no solo publicaciones bonitas.",
         },
         {
-            "icon": "🧩",
-            "title": "Personalización de soluciones",
-            "description": "Sistemas hechos a la medida según industria, proceso, equipo, objetivo comercial y herramientas existentes.",
-            "benefit": "Soluciones adaptadas al negocio, no plantillas genéricas.",
+            "icon": "ðŸ§©",
+            "title": "PersonalizaciÃ³n de soluciones",
+            "description": "Sistemas hechos a la medida segÃºn industria, proceso, equipo, objetivo comercial y herramientas existentes.",
+            "benefit": "Soluciones adaptadas al negocio, no plantillas genÃ©ricas.",
         },
         {
-            "icon": "📊",
+            "icon": "ðŸ“Š",
             "title": "Dashboards y reportes",
-            "description": "Reportes ejecutivos, tableros operativos y consolidación automática de datos desde múltiples fuentes.",
+            "description": "Reportes ejecutivos, tableros operativos y consolidaciÃ³n automÃ¡tica de datos desde mÃºltiples fuentes.",
             "benefit": "Decisiones con datos visibles y accionables.",
         },
         {
-            "icon": "📄",
+            "icon": "ðŸ“„",
             "title": "Procesamiento documental",
-            "description": "OCR, clasificación, validación y extracción de datos desde PDFs, imágenes, comprobantes y documentos.",
-            "benefit": "Documentos convertidos en datos útiles.",
+            "description": "OCR, clasificaciÃ³n, validaciÃ³n y extracciÃ³n de datos desde PDFs, imÃ¡genes, comprobantes y documentos.",
+            "benefit": "Documentos convertidos en datos Ãºtiles.",
         },
         {
-            "icon": "🔌",
+            "icon": "ðŸ”Œ",
             "title": "Integraciones API",
-            "description": "Conexión entre CRMs, formularios, WhatsApp, bases de datos, webhooks y servicios backend.",
+            "description": "ConexiÃ³n entre CRMs, formularios, WhatsApp, bases de datos, webhooks y servicios backend.",
             "benefit": "Herramientas conectadas en un mismo sistema.",
         },
         {
-            "icon": "🕸️",
-            "title": "Scraping y extracción de datos",
-            "description": "Extracción estructurada de información pública, validaciones y monitoreo de fuentes digitales.",
-            "benefit": "Información clave sin captura manual.",
+            "icon": "ðŸ•¸ï¸",
+            "title": "Scraping y extracciÃ³n de datos",
+            "description": "ExtracciÃ³n estructurada de informaciÃ³n pÃºblica, validaciones y monitoreo de fuentes digitales.",
+            "benefit": "InformaciÃ³n clave sin captura manual.",
         },
     ],
     "projects": [
         {
             "id": "pizarra-concursal",
-            "icon": "⚖️",
+            "icon": "âš–ï¸",
             "name": "Pizarra Concursal",
-            "summary": "Servicio FastAPI para consulta, scraping, evidencias y respuesta estructurada de información concursal.",
-            "problem": "El proceso requería consultar información pública, validar coincidencias y entregar evidencia sin depender de revisión manual repetitiva.",
-            "solution": "Se construyó un servicio con endpoints, scraping controlado, Playwright para evidencias y salida JSON lista para integrarse con n8n u otros sistemas.",
+            "summary": "Servicio FastAPI para consulta, scraping, evidencias y respuesta estructurada de informaciÃ³n concursal.",
+            "problem": "El proceso requerÃ­a consultar informaciÃ³n pÃºblica, validar coincidencias y entregar evidencia sin depender de revisiÃ³n manual repetitiva.",
+            "solution": "Se construyÃ³ un servicio con endpoints, scraping controlado, Playwright para evidencias y salida JSON lista para integrarse con n8n u otros sistemas.",
             "technologies": ["FastAPI", "Python", "Scraping", "Playwright", "APIs"],
             "categories": ["api", "automation", "data"],
             "videos": [
@@ -138,51 +138,51 @@ CATALOG = {
         },
         {
             "id": "repuve",
-            "icon": "🚗",
+            "icon": "ðŸš—",
             "name": "REPUVE",
-            "summary": "Automatización para procesamiento masivo de vehículos, consultas por lotes y manejo de escenarios con CAPTCHA.",
-            "problem": "Las consultas manuales por vehículo eran lentas, difíciles de escalar y sensibles a bloqueos o validaciones externas.",
-            "solution": "Se diseñó una arquitectura por batches para procesar listas de vehículos, registrar resultados y manejar errores de forma controlada.",
-            "technologies": ["Automatización", "Batches", "n8n", "APIs", "Procesamiento masivo"],
+            "summary": "AutomatizaciÃ³n para procesamiento masivo de vehÃ­culos, consultas por lotes y manejo de escenarios con CAPTCHA.",
+            "problem": "Las consultas manuales por vehÃ­culo eran lentas, difÃ­ciles de escalar y sensibles a bloqueos o validaciones externas.",
+            "solution": "Se diseÃ±Ã³ una arquitectura por batches para procesar listas de vehÃ­culos, registrar resultados y manejar errores de forma controlada.",
+            "technologies": ["AutomatizaciÃ³n", "Batches", "n8n", "APIs", "Procesamiento masivo"],
             "categories": ["automation", "data", "api"],
         },
         {
             "id": "swartz",
-            "icon": "🧾",
+            "icon": "ðŸ§¾",
             "name": "Swartz",
-            "summary": "Asistente contable con IA para recepción, validación documental y soporte por WhatsApp.",
-            "problem": "Los usuarios necesitaban enviar documentos fiscales y recibir orientación clara sin saturar al equipo contable.",
-            "solution": "Se diseñó un flujo con WhatsApp, OCR, validación documental, clasificación de archivos y respuestas basadas en reglas de negocio.",
-            "technologies": ["WhatsApp", "OCR", "OpenAI", "n8n", "Validación documental"],
+            "summary": "Asistente contable con IA para recepciÃ³n, validaciÃ³n documental y soporte por WhatsApp.",
+            "problem": "Los usuarios necesitaban enviar documentos fiscales y recibir orientaciÃ³n clara sin saturar al equipo contable.",
+            "solution": "Se diseÃ±Ã³ un flujo con WhatsApp, OCR, validaciÃ³n documental, clasificaciÃ³n de archivos y respuestas basadas en reglas de negocio.",
+            "technologies": ["WhatsApp", "OCR", "OpenAI", "n8n", "ValidaciÃ³n documental"],
             "categories": ["ai", "automation", "data"],
         },
         {
             "id": "riviera-smart",
-            "icon": "🏝️",
+            "icon": "ðŸï¸",
             "name": "Riviera Smart",
-            "summary": "Sistema para matching inmobiliario, generación de propuestas patrimoniales y documentos personalizados.",
-            "problem": "El equipo necesitaba convertir información inmobiliaria dispersa en propuestas claras, visuales y personalizadas para prospectos.",
-            "solution": "Se planteó un flujo de matching con IA, extracción de datos, generación de HTML/PDF y entrega automatizada de propuestas.",
-            "technologies": ["IA", "Matching", "PDF", "Google Drive", "Automatización"],
+            "summary": "Sistema para matching inmobiliario, generaciÃ³n de propuestas patrimoniales y documentos personalizados.",
+            "problem": "El equipo necesitaba convertir informaciÃ³n inmobiliaria dispersa en propuestas claras, visuales y personalizadas para prospectos.",
+            "solution": "Se planteÃ³ un flujo de matching con IA, extracciÃ³n de datos, generaciÃ³n de HTML/PDF y entrega automatizada de propuestas.",
+            "technologies": ["IA", "Matching", "PDF", "Google Drive", "AutomatizaciÃ³n"],
             "categories": ["ai", "automation", "data"],
         },
         {
             "id": "bot-educativo",
-            "icon": "🎓",
+            "icon": "ðŸŽ“",
             "name": "Bot Educativo",
-            "summary": "Bot educativo por Telegram con IA, planes de suscripción y control de acceso mediante registros.",
-            "problem": "Los estudiantes necesitaban un asistente académico accesible con límites por plan y validación sencilla de pagos.",
-            "solution": "Se diseñó un bot con registro en Sheets, referencias de pago, validación manual y activación automática según estatus.",
-            "technologies": ["Telegram", "OpenAI", "Google Sheets", "Suscripciones", "Automatización"],
+            "summary": "Bot educativo por Telegram con IA, planes de suscripciÃ³n y control de acceso mediante registros.",
+            "problem": "Los estudiantes necesitaban un asistente acadÃ©mico accesible con lÃ­mites por plan y validaciÃ³n sencilla de pagos.",
+            "solution": "Se diseÃ±Ã³ un bot con registro en Sheets, referencias de pago, validaciÃ³n manual y activaciÃ³n automÃ¡tica segÃºn estatus.",
+            "technologies": ["Telegram", "OpenAI", "Google Sheets", "Suscripciones", "AutomatizaciÃ³n"],
             "categories": ["ai", "automation"],
         },
         {
             "id": "ki-os",
-            "icon": "🫀",
+            "icon": "ðŸ«€",
             "name": "Ki OS",
             "summary": "Laboratorio interno para experimentar con voz, memoria, modelos locales y experiencias persistentes de IA.",
-            "problem": "Se requería un espacio experimental para probar interacción por voz, memoria persistente y arquitectura de asistente personal.",
-            "solution": "Se creó un laboratorio interno conectado a microservicios, modelos locales y servicios de IA para prototipar capacidades avanzadas.",
+            "problem": "Se requerÃ­a un espacio experimental para probar interacciÃ³n por voz, memoria persistente y arquitectura de asistente personal.",
+            "solution": "Se creÃ³ un laboratorio interno conectado a microservicios, modelos locales y servicios de IA para prototipar capacidades avanzadas.",
             "technologies": ["Voz", "Memoria", "OpenAI", "FastAPI", "Modelos locales"],
             "categories": ["ai", "api"],
         },
@@ -206,24 +206,24 @@ CATALOG = {
             "description": "Entendemos el proceso, los dolores operativos y el objetivo comercial.",
         },
         {
-            "title": "Diseño",
+            "title": "DiseÃ±o",
             "description": "Mapeamos arquitectura, datos, herramientas, riesgos y experiencia del usuario.",
         },
         {
             "title": "Desarrollo",
-            "description": "Construimos el MVP con código limpio, flujos claros e integraciones mantenibles.",
+            "description": "Construimos el MVP con cÃ³digo limpio, flujos claros e integraciones mantenibles.",
         },
         {
             "title": "Pruebas",
             "description": "Validamos errores, casos reales, respuestas, tiempos y rutas alternativas.",
         },
         {
-            "title": "Implementación",
-            "description": "Dejamos la solución corriendo en entorno local, cloud o herramienta operativa.",
+            "title": "ImplementaciÃ³n",
+            "description": "Dejamos la soluciÃ³n corriendo en entorno local, cloud o herramienta operativa.",
         },
         {
             "title": "Soporte",
-            "description": "Ajustamos, documentamos y mejoramos según uso real del negocio.",
+            "description": "Ajustamos, documentamos y mejoramos segÃºn uso real del negocio.",
         },
     ],
 }
@@ -272,7 +272,7 @@ def get_gallery():
 @app.post("/api/leads", status_code=201)
 def create_lead(payload: LeadCreate):
     if "@" not in payload.email:
-        raise HTTPException(status_code=400, detail="El correo no parece válido.")
+        raise HTTPException(status_code=400, detail="El correo no parece vÃ¡lido.")
 
     leads = read_leads()
 
@@ -314,7 +314,7 @@ def get_gallery_items() -> list[dict]:
             continue
 
         file_stem = file.stem.lower()
-        label = "Código" if any(word in file_stem for word in ["code", "codigo", "script", "api"]) else "Workflow"
+        label = "CÃ³digo" if any(word in file_stem for word in ["code", "codigo", "script", "api"]) else "Workflow"
 
         items.append(
             {
@@ -362,3 +362,43 @@ def code_examples():
 @app.get("/catalog", response_class=HTMLResponse)
 def catalog_page(request: Request):
     return templates.TemplateResponse(request=request, name="catalog.html", context={})
+
+
+
+MOMENTS_DEMOS = {
+    "ivory",
+    "midnight",
+    "elan",
+    "aura",
+    "film",
+    "maison",
+}
+
+
+@app.get("/moments", response_class=HTMLResponse)
+def moments_page(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="moments.html",
+        context={},
+    )
+
+
+@app.get("/moments/demo/{slug}", response_class=HTMLResponse)
+def moments_demo(request: Request, slug: str):
+    normalized_slug = slug.strip().lower()
+
+    if normalized_slug not in MOMENTS_DEMOS:
+        raise HTTPException(
+            status_code=404,
+            detail="La experiencia solicitada no existe.",
+        )
+
+    return templates.TemplateResponse(
+        request=request,
+        name="moments/demo.html",
+        context={
+            "demo_slug": normalized_slug,
+        },
+    )
+

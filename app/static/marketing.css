@@ -215,3 +215,210 @@
     padding: 28px;
   }
 }
+
+/* =========================================================
+   KIOAI MOMENTS — HOME FEATURE
+   ========================================================= */
+
+.moments-home-feature {
+  width: min(1180px, calc(100% - 32px));
+  margin: 30px auto 80px;
+  display: grid;
+  grid-template-columns: 1.04fr .96fr;
+  gap: 54px;
+  align-items: center;
+  padding: 64px;
+  border: 1px solid rgba(212, 173, 114, .25);
+  border-radius: 38px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(164, 79, 50, .23), transparent 24rem),
+    radial-gradient(circle at 90% 10%, rgba(212, 173, 114, .17), transparent 25rem),
+    linear-gradient(145deg, #21140d, #100b08);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, .42);
+}
+
+.moments-home-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #d4ad72;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.moments-home-kicker::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: currentColor;
+}
+
+.moments-home-copy h2 {
+  margin: 22px 0 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.065em;
+}
+
+.moments-home-copy h2 em {
+  display: block;
+  margin-top: 8px;
+  color: #d4ad72;
+  font-weight: 400;
+}
+
+.moments-home-copy p {
+  max-width: 650px;
+  color: #a69688;
+  line-height: 1.8;
+}
+
+.moments-home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.moments-home-primary,
+.moments-home-secondary {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 21px;
+  font-weight: 800;
+  transition: transform .18s ease;
+}
+
+.moments-home-primary:hover,
+.moments-home-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.moments-home-primary {
+  color: #16100b;
+  background: linear-gradient(135deg, #f0d9ad, #d4ad72);
+}
+
+.moments-home-secondary {
+  border: 1px solid rgba(212, 173, 114, .28);
+  background: rgba(255,255,255,.045);
+}
+
+.moments-home-art {
+  position: relative;
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+}
+
+.moments-home-ring {
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  border: 1px solid rgba(212, 173, 114, .24);
+  border-radius: 50%;
+}
+
+.moments-home-ring::before {
+  content: "";
+  position: absolute;
+  inset: 46px;
+  border: 1px dashed rgba(212, 173, 114, .17);
+  border-radius: inherit;
+}
+
+.moments-home-card {
+  position: relative;
+  width: 245px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(246, 240, 229, .2);
+  border-radius: 120px 120px 26px 26px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(240, 217, 173, .28), transparent 13rem),
+    linear-gradient(155deg, #74462f, #2a1811 58%, #100a07);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .46);
+  transform: rotate(4deg);
+}
+
+.moments-home-card span,
+.moments-home-card small {
+  color: #dec29c;
+}
+
+.moments-home-card span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.moments-home-card strong {
+  width: 88px;
+  height: 88px;
+  margin: 28px 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(240, 217, 173, .56);
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.moments-home-card small {
+  letter-spacing: .14em;
+}
+
+.moments-home-note {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  border: 1px solid rgba(212, 173, 114, .2);
+  border-radius: 999px;
+  padding: 11px 14px;
+  color: #d4ad72;
+  background: rgba(24, 15, 10, .78);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(14px);
+}
+
+@media (max-width: 900px) {
+  .moments-home-feature {
+    grid-template-columns: 1fr;
+    padding: 42px;
+  }
+}
+
+@media (max-width: 620px) {
+  .moments-home-feature {
+    padding: 29px;
+  }
+
+  .moments-home-art {
+    min-height: 370px;
+  }
+
+  .moments-home-ring {
+    width: 320px;
+    height: 320px;
+  }
+
+  .moments-home-card {
+    width: 210px;
+    min-height: 300px;
+  }
+}

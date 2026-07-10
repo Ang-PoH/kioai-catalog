@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-demo="{{ demo_slug }}">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+
+  <title>KIOAI Moments</title>
+
+  <meta name="theme-color" content="#15100c" />
+
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+
+  <link
+    rel="stylesheet"
+    href="/static/moments/demo.css?v=2.0"
+  />
+
+  <script
+    src="/static/moments/demo.js?v=2.0"
+    defer
+  ></script>
+</head>
+
+<body>
+  <div class="demo-loader" id="demoLoader">
+    <span>KIOAI Moments</span>
+  </div>
+
+  <div class="demo-entry" id="demoEntry">
+    <div class="entry-content">
+      <span class="entry-kicker" id="entryKicker"></span>
+
+      <div class="entry-monogram" id="entryMonogram"></div>
+
+      <h1 id="entryNames"></h1>
+
+      <p id="entryPhrase"></p>
+
+      <button type="button" id="enterExperience">
+        Entrar a la experiencia
+      </button>
+    </div>
+  </div>
+
+  <button
+    class="music-control"
+    id="musicControl"
+    type="button"
+    aria-label="Activar o pausar música"
+  >
+    <span class="music-icon">♪</span>
+    <span class="music-label">Música</span>
+  </button>
+
+  <audio id="experienceAudio" loop preload="none"></audio>
+
+  <header class="demo-header">
+    <a href="/moments" class="demo-brand">
+      KIOAI Moments
+    </a>
+
+    <button
+      class="demo-menu-button"
+      id="demoMenuButton"
+      type="button"
+      aria-label="Abrir navegación"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="demo-nav" id="demoNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#itinerario">Itinerario</a>
+      <a href="#galeria">Galería</a>
+      <a href="#confirmar">Confirmar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="demo-hero" id="inicio">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <span class="hero-kicker" id="heroKicker"></span>
+
+        <h1 id="heroNames"></h1>
+
+        <p class="hero-date" id="heroDate"></p>
+
+        <a href="#mensaje" class="hero-scroll">
+          Descubre nuestra historia
+          <span>↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="demo-message demo-section" id="mensaje">
+      <span class="section-kicker">Bienvenidos</span>
+
+      <blockquote id="welcomeMessage"></blockquote>
+    </section>
+
+    <section class="countdown-section demo-section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Falta muy poco</span>
+        <h2 id="countdownTitle"></h2>
+      </div>
+
+      <div class="countdown-grid" id="countdownGrid">
+        <div>
+          <strong id="days">000</strong>
+          <span>Días</span>
+        </div>
+
+        <div>
+          <strong id="hours">00</strong>
+          <span>Horas</span>
+        </div>
+
+        <div>
+          <strong id="minutes">00</strong>
+          <span>Minutos</span>
+        </div>
+
+        <div>
+          <strong id="seconds">00</strong>
+          <span>Segundos</span>
+        </div>
+      </div>
+
+      <a
+        class="demo-button secondary"
+        id="calendarButton"
+        href="#"
+      >
+        Agregar al calendario
+      </a>
+    </section>
+
+    <section class="story-section demo-section" id="historia">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Nuestra historia</span>
+        <h2>Todo comenzó con un momento.</h2>
+      </div>
+
+      <div class="story-timeline" id="storyTimeline"></div>
+    </section>
+
+    <section class="locations-section demo-section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">El gran día</span>
+        <h2>Dónde estaremos.</h2>
+      </div>
+
+      <div class="location-grid" id="locationGrid"></div>
+    </section>
+
+    <section class="timeline-section demo-section" id="itinerario">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Itinerario</span>
+        <h2>Cada momento tiene su hora.</h2>
+      </div>
+
+      <div class="event-timeline" id="eventTimeline"></div>
+    </section>
+
+    <section class="gallery-section demo-section" id="galeria">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Nuestros recuerdos</span>
+        <h2>Antes de este día.</h2>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="details-section demo-section">
+      <div class="detail-grid">
+        <article class="detail-card reveal">
+          <span class="section-kicker">Dress code</span>
+          <h2 id="dressCodeTitle"></h2>
+          <p id="dressCodeText"></p>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="section-kicker">Mesa de regalos</span>
+          <h2 id="giftTitle"></h2>
+          <p id="giftText"></p>
+
+          <a
+            class="demo-button secondary"
+            href="#confirmar"
+          >
+            Ver opciones
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="travel-section demo-section"
+      id="travelSection"
+      hidden
+    >
+      <div class="section-heading reveal">
+        <span class="section-kicker">Tu visita</span>
+        <h2>Todo lo necesario para acompañarnos.</h2>
+      </div>
+
+      <div class="travel-grid" id="travelGrid"></div>
+    </section>
+
+    <section class="rsvp-section demo-section" id="confirmar">
+      <div class="rsvp-card reveal">
+        <span class="section-kicker">RSVP</span>
+
+        <h2>¿Nos acompañas?</h2>
+
+        <p id="rsvpText"></p>
+
+        <div class="rsvp-actions">
+          <a
+            class="demo-button primary"
+            id="whatsappRsvp"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            Confirmar por WhatsApp
+          </a>
+
+          <button
+            class="demo-button secondary"
+            id="openRsvpForm"
+            type="button"
+          >
+            Confirmar aquí
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="demo-footer">
+    <span>KIOAI Moments</span>
+
+    <p id="footerNames"></p>
+
+    <a href="/moments">
+      Explorar más experiencias
+    </a>
+  </footer>
+
+  <dialog class="rsvp-modal" id="rsvpModal">
+    <form method="dialog" class="rsvp-form" id="rsvpForm">
+      <button
+        class="modal-close"
+        type="button"
+        id="closeRsvpModal"
+        aria-label="Cerrar formulario"
+      >
+        ×
+      </button>
+
+      <span class="section-kicker">Confirmación</span>
+
+      <h2>Queremos contar contigo.</h2>
+
+      <label>
+        Nombre completo
+
+        <input
+          name="name"
+          type="text"
+          required
+          autocomplete="name"
+        />
+      </label>
+
+      <label>
+        Número de asistentes
+
+        <select name="guests" required>
+          <option value="">Selecciona</option>
+          <option value="1">1 asistente</option>
+          <option value="2">2 asistentes</option>
+          <option value="3">3 asistentes</option>
+          <option value="4">4 asistentes</option>
+        </select>
+      </label>
+
+      <label>
+        ¿Nos acompañas?
+
+        <select name="attendance" required>
+          <option value="">Selecciona</option>
+          <option value="yes">Sí, ahí estaremos</option>
+          <option value="no">No podremos asistir</option>
+        </select>
+      </label>
+
+      <label>
+        Mensaje
+
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Escribe un mensaje para los anfitriones"
+        ></textarea>
+      </label>
+
+      <button class="demo-button primary" type="submit">
+        Enviar confirmación
+      </button>
+
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </dialog>
+
+  <dialog class="gallery-modal" id="galleryModal">
+    <button
+      class="modal-close"
+      type="button"
+      id="closeGalleryModal"
+      aria-label="Cerrar fotografía"
+    >
+      ×
+    </button>
+
+    <div
+      class="gallery-modal-image"
+      id="galleryModalImage"
+    ></div>
+  </dialog>
+</body>
+</html>
